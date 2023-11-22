@@ -28,7 +28,14 @@ november = [ 2400, 1800, 1500, 1500, 1500, 1100, 1000, 1000, 1000, 770, 700, 700
 #     ▪ Füzze az eredményt a 'változás' lista végéhez!
 # ▪ A ciklus után írja képernyőre a kiszámolt adatokat!
 
-
+valtozas = []
+i = 0
+while i < len(december):
+    szazalek = (december[i] / november[i] - 1) * 100
+    kerekitve = round(szazalek, 2)
+    valtozas.append(kerekitve)
+    i += 1 
+print(valtozas)
 # 3. feladat
 # ▪ importálja a json modult!
 # ▪ készítsen az adatokból szótárat
