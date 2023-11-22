@@ -40,3 +40,6 @@ print(valtozas)
 # ▪ importálja a json modult!
 # ▪ készítsen az adatokból szótárat
 # ▪ mentse fájlba data.json néven!
+import json
+with open("data.json", "w") as fajl:
+    json.dump(valtozas, fajl)
